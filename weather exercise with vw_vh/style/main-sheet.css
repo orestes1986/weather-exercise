@@ -11,7 +11,7 @@
   top:20vh;
   visibility: hidden;
   opacity: 0;
-  border: 3px solid black;
+/*   border: 3px solid black; */
 }
 #locationForm {
 /*   color: red; */
