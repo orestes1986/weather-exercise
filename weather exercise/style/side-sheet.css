@@ -1,32 +1,23 @@
 .css-navigation-conteiner{
   position: relative;
-  top: 20%;
+  top: 20vh;
   visibility: hidden;
   opacity: 0;
 }
 .css-side-menu {
   position: fixed;
-  width: 25%;
+  width: 25vw;
   max-width:350px;
   min-width:250px;
-  height:100%;
+  height:100vh;
   min-height:100%;
+  max-height:100%;
   top: 0px;
   bottom: 0px;
   float:left;
   background-color:#6ffe90;
   z-index:1001;
   transition: all 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
-}
-.css-side-menu-off {
-  position: fixed;
-  left:-50%;
-  visibility: hidden;
-}
-.css-side-menu-on {
-  position: fixed;
-  left: 0%;
-  visibility: visible;
 }
 .css-side-menu h1 {
   color: white;
@@ -35,9 +26,9 @@
 }
 #side-bar-links {
   color: #a970ff;
-  position: relative;
+  position: fixed;
   float:left;
-  top: 20%;
+  top: 20vh;
   font-size: 25pt;
   list-style-type: none;
 }
@@ -50,11 +41,11 @@
   text-decoration: none;
 }
 #side-bar-socials {
-  position: relative;
+  position: fixed;
   color: #a970ff;
 /*   float:left; */
-  right: 35%;
-  top: 60%;
+/*   right: 35%; */
+  top: 70vh;
   list-style-type: none;
 /*   border: 3px solid black; */
 }
@@ -74,6 +65,16 @@
 #side-bar-socials a:visited {
   color: #a970ff;
   text-decoration: none;
+}
+.css-side-menu-off {
+  position: absolute;
+  left:-50vw;
+  visibility: hidden;
+}
+.css-side-menu-on {
+  position: fixed;
+  left: 0vw;
+  visibility: visible;
 }
 .css-menu-toggler {
   position: fixed;
