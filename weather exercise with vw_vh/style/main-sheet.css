@@ -8,10 +8,10 @@
 }
 .css-navigation-conteiner{
   position: relative;
-  top: 20vh;
+  top:20vh;
   visibility: hidden;
   opacity: 0;
-/*   border: 3px solid black; */
+  border: 3px solid black;
 }
 #locationForm {
 /*   color: red; */
@@ -28,7 +28,7 @@
 /*   border-style: solid; */
 }
 #locationSearch {
-  height: 15vw;
+  height: 15vh;
   max-height: 30px;
   min-height: 20px;
   margin-top:10px;
@@ -74,7 +74,7 @@
   float: left;
 }
 #locationForm button {
-  height: 20vw;
+  height: 20vh;
   max-height: 40px;
   min-height: 30px;
   width: 10vw;

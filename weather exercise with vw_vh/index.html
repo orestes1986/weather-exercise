@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/main-sheet.css">
     <link rel="stylesheet" href="style/side-sheet.css">
     <link rel="stylesheet" href="style/weather-sheet.css">
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFB2gzVg4FVh7yxGjlpKOxUZCfjYR_2c0&libraries=places"> </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFB2gzVg4FVh7yxGjlpKOxUZCfjYR_2c0&libraries=places"> </script>
     <script src="script/jquery-3.1.1.min.js"></script>
     <script src="script/load.js"></script>
     <script src="script/form.js"></script>
@@ -19,6 +19,7 @@
   </head>
 
   <body>
+  <div id="all">
     <div class="css-head">
       <p>
 	<a href="#" onClick="toggleMenu()" class="css-menu-call-on js-menu-call css-menu-toggler"><img id="menu-call" class="css-menu-toggler" src="./imgs/menu.svg" /></a>
@@ -57,7 +58,7 @@
       </a>
     </div>
     <div class="css-navigation-conteiner" id="navigation-conteiner">         
-      <div id="locationForm" name="locationForm" onsubmit="return false;" onkeypress="checKeyFunc()">
+      <div id="locationForm" name="locationForm" onsubmit="return false;" onkeypress="checKey()">
 	<label for="locationType"> type a location:
 	</label> <br />
 	<div id="locationSearch">
@@ -85,19 +86,9 @@
 	<div class="css-display-forcast" id="forcast-day5"></div>
       </div>
     </div>
-    <div class="css-foot">
-      <p><a href="http://holy.gd/">Ø</a></p>
+      <div class="css-foot">
+	<p><a href="http://holy.gd/">Ø</a></p>
+      </div>
     </div>
-  <!--   <div id="home-link"><p><a href="http://holy.gd/">Ø</a></p></div> -->
-    <!--<div id="annotations">
-      <p>
-	Icons made by:
-	<br /><a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> / <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/lucy-g" title="Lucy G">Lucy G</a>, <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/hanan" title="Hanan">Hanan</a>, <a href="http://www.flaticon.com/authors/hadrien" title="Hadrien">Hadrien</a>, <a href="http://www.flaticon.com/authors/eleonor-wang" title="Eleonor Wang">Eleonor Wang</a>, <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a>
-      </p>
-      from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-      
-      <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      <div>Icons made by <a href="http://www.flaticon.com/authors/sarfraz-shoukat" title="Sarfraz Shoukat">Sarfraz Shoukat</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    </div>-->
   </body>
 </html>

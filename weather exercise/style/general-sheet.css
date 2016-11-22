@@ -58,3 +58,8 @@ div {
 #addressing {
   color: #000;
 }
+#all {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+}
