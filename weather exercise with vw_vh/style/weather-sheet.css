@@ -1,0 +1,42 @@
+.css-max-tempratures{
+  font-weight: bolder;
+}
+.css-min-tempratures{
+  font-weight: lighter;
+/*   opacity: .8; */
+}
+.css-display-weather-n-forcast {
+  position: relative;
+/*   top: -70vh; */
+ /* max-width: 100px;
+  min-width: 50px;*/
+  max-height: 80px;
+  color: white;
+  text-align:center;
+  visibility: hidden;
+  opacity: 0;
+}
+.css-display-forcast {
+  display: inline-block;
+}
+.css-display-forcast img {
+  max-width: 100px;
+}
+#display-forcasts {
+  width: 70vw;
+/*   border: 3px solid black; */
+}
+#weather-today img {
+  max-width: 150px;
+}
+#today-label, .css-tempratures {
+  color: #82d1b4;
+}
+.weathered .css-display-weather-n-forcast {
+  -webkit-transition: opacity 5s ease-in-out;
+      -ms-transition: opacity 5s ease-in-out;
+    -moz-transition: opacity 5s ease-in-out;
+      -o-transition: opacity 5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}

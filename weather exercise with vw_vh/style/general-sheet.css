@@ -1,0 +1,60 @@
+@font-face {
+   font-family: biko;
+   font-weight: bold;
+    src: url(./type/biko/Biko_Bold.otf);
+}
+@font-face {
+   font-family: biko;
+   font-weight: bolder;
+    src: url(./type/biko/Biko_Black.otf);
+}
+@font-face {
+   font-family: biko;
+    src: url(./type/biko/Biko_Light-Restricted.otf);
+   font-weight: lighter;
+}
+@font-face {
+    font-family: biko;
+    src: url(./type/biko/Biko_Regular.otf);
+}
+html {
+  font-family: biko;
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+  position:relative;
+}
+body{
+  background-color: #ff7070;
+}
+div {
+  margin: auto;
+}
+
+@-webkit-keyframes fadeIt {
+  0%   { background-color: #ff7070; }
+  100% { background-color: #a970ff; }
+}
+.weathered {
+  -webkit-animation: fadeIt 4s ease-in-out; 
+      -moz-animation: fadeIt 4s ease-in-out; 
+	-o-animation: fadeIt 4s ease-in-out; 
+	    animation: fadeIt 4s ease-in-out;
+  background-color: #a970ff;
+}
+.css-plain-text h1 {
+  text-align:center;
+  color: #555;
+}
+.css-plain-text {
+  color: #333;
+  text-align:justify;
+  margin-top: 10%;
+  width:60%;
+}
+#signature {
+  color: #fff;
+  text-align:right;
+  margin-top: 10%;
+}
+#addressing {
+  color: #000;
+}

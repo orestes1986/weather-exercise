@@ -1,0 +1,87 @@
+.css-navigation-conteiner{
+  position: relative;
+  top: 20vh;
+  visibility: hidden;
+  opacity: 0;
+}
+.css-side-menu {
+  position: fixed;
+  width: 25vw;
+  max-width:350px;
+  min-width:250px;
+  height:100vh;
+  min-height:100%;
+  top: 0px;
+  bottom: 0px;
+  float:left;
+  background-color:#6ffe90;
+  z-index:1001;
+  transition: all 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+.css-side-menu h1 {
+  color: white;
+  margin: 10px;
+  margin-top: 140px;
+}
+#side-bar-links {
+  color: #a970ff;
+  position: relative;
+  float:left;
+  top: 20vh;
+  font-size: 25pt;
+  list-style-type: none;
+}
+#side-bar-links a:link {
+  color: #a970ff;
+  text-decoration: none;
+}
+#side-bar-links a:visited {
+  color: #a970ff;
+  text-decoration: none;
+}
+#side-bar-socials {
+  position: relative;
+  color: #a970ff;
+/*   float:left; */
+  right: 35%;
+  top: 60vh;
+  list-style-type: none;
+/*   border: 3px solid black; */
+}
+#side-bar-socials li {
+  display: inline;
+}
+#side-bar-socials img {
+  max-width: 20px;
+  max-height: 20px;
+/*   visibility: hidden; */
+/*   border: 3px solid black; */
+}
+#side-bar-socials a:link {
+  color: #a970ff;
+  text-decoration: none;
+}
+#side-bar-socials a:visited {
+  color: #a970ff;
+  text-decoration: none;
+}
+.css-side-menu-off {
+  position: absolute;
+  left:-50vw;
+  visibility: hidden;
+}
+.css-side-menu-on {
+  position: fixed;
+  left: 0vw;
+  visibility: visible;
+}
+.css-menu-toggler {
+  position: fixed;
+  margin: 10px;
+  max-width: 20px;
+  z-index:1001;
+}
+#menu-remove {
+  margin-left: 20px;
+  margin-top: 40px;
+}

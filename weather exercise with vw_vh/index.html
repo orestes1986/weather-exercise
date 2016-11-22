@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/general-sheet.css">
+    <link rel="stylesheet" href="style/loader-sheet.css">
+    <link rel="stylesheet" href="style/main-sheet.css">
+    <link rel="stylesheet" href="style/side-sheet.css">
+    <link rel="stylesheet" href="style/weather-sheet.css">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFB2gzVg4FVh7yxGjlpKOxUZCfjYR_2c0&libraries=places"> </script>
+    <script src="script/jquery-3.1.1.min.js"></script>
+    <script src="script/load.js"></script>
+    <script src="script/form.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/weather.js"></script>
+    <script src="script/fav.js"></script>
+  <title>umbrelapp</title>
+  </head>
+
+  <body>
+    <div class="css-head">
+      <p>
+	<a href="#" onClick="toggleMenu()" class="css-menu-call-on js-menu-call css-menu-toggler"><img id="menu-call" class="css-menu-toggler" src="./imgs/menu.svg" /></a>
+	<a href="#" class="css-favourites" onClick="addToFav()">Add to Favorites <img id="favourites-heart" src="./imgs/heart.svg" /></a>
+<!-- <script async src='https://helloacm.com/js/addtofavorite.js'></script> -->
+
+      </p>
+    </div> <!-- /#head -->
+    <div class="css-side-menu css-side-menu-off js-side-menu">
+      <a href="#" onClick="toggleMenu()" class="css-menu-toggler"><img id="menu-remove" class="css-menu-toggler" src="./imgs/cancel.svg" /></a>
+      <h1>
+	Your best weather app
+      </h1>
+      <ul id="side-bar-links">
+	-
+	<li><a href="about.html">team</a></li>
+	<li><a href="annotations.html">annotations</a></li>
+	<li><a href="history.html">history</a></li>
+	<li><a href="mailto:orestes.k.poulakis@gmail.com">contact</a></li>
+      </ul>
+      <ul id="side-bar-socials">
+	suggest to a friend <br />
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" id="facebook-link" class="js-social-link"><img id="facebook-icon" class="css-social-icon" src="./imgs/facebook-logo.svg" /></a></li>
+	<li><a href="https://twitter.com/home?status=" target="_blank" id="twitter-link" class="js-social-link"><img id="twitter-icon" class="css-social-icon" src="./imgs/twitter-logo-silhouette.svg" /></a></a></li>
+	<li><a href="https://plus.google.com/share?url=" target="_blank" id="google-plus-link" class="js-social-link"><img id="google-plus-icon" class="css-social-icon" src="./imgs/google-plus.svg" /></a></a></li>
+      </ul>
+    </div>
+    <div class="css-loader-conteiner js-loader-conteiner">
+      <a href="index.html?body=loaded">
+	<div class="css-loader-image css-loader-img">
+	  <img src="./imgs/support.svg" />
+	</div>
+	<div class="css-loader-content js-loader-content">
+	  umbrelaap
+	</div>
+      </a>
+    </div>
+    <div class="css-navigation-conteiner" id="navigation-conteiner">         
+      <div id="locationForm" name="locationForm" onsubmit="return false;" onkeypress="checKeyFunc()">
+	<label for="locationType"> type a location:
+	</label> <br />
+	<div id="locationSearch">
+	  <input type="text" id="locationType" name="locationType" placeholder="type here..">
+	    <a href="#" onClick="searchLocation()"><img src="./imgs/magnifying-glass.svg" /></a>
+	  </input>
+	</div>
+	<label for="locationButton">
+	  <br />or give us your location:
+	</label> <br />
+	<button id="locationButton" onClick="accessLocation()">
+	
+	  <img src="./imgs/navigation.svg" />
+	  access location
+	</button> <!-- /#locationButton -->
+      </div> <!-- /#locationForm -->
+    </div> <!-- /#navigation-conteiner -->
+    <div class="css-display-weather-n-forcast">
+      <div class="css-display-weather" id="weather-today"></div>
+      <div id="display-forcasts">
+	<div class="css-display-forcast" id="forcast-day1"></div>
+	<div class="css-display-forcast" id="forcast-day2"></div>
+	<div class="css-display-forcast" id="forcast-day3"></div>
+	<div class="css-display-forcast" id="forcast-day4"></div>
+	<div class="css-display-forcast" id="forcast-day5"></div>
+      </div>
+    </div>
+    <div class="css-foot">
+      <p><a href="http://holy.gd/">Ø</a></p>
+    </div>
+  <!--   <div id="home-link"><p><a href="http://holy.gd/">Ø</a></p></div> -->
+    <!--<div id="annotations">
+      <p>
+	Icons made by:
+	<br /><a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> / <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/lucy-g" title="Lucy G">Lucy G</a>, <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/hanan" title="Hanan">Hanan</a>, <a href="http://www.flaticon.com/authors/hadrien" title="Hadrien">Hadrien</a>, <a href="http://www.flaticon.com/authors/eleonor-wang" title="Eleonor Wang">Eleonor Wang</a>, <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a>
+      </p>
+      from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+      
+      <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="http://www.flaticon.com/authors/sarfraz-shoukat" title="Sarfraz Shoukat">Sarfraz Shoukat</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </div>-->
+  </body>
+</html>
