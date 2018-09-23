@@ -5,10 +5,6 @@
 Για να την τρέξετε, απλά ανοίξτε το αρχείο index.html (από οποιονδήποτε από τους δύο φακέλους) με κάποιο browser. Οι δύο φάκελοι περιέχουν πρακτικά τα ίδια πράγματα μεταξύ τους, η μόνη διαφορά είναι πως στον ένα έχω χρησιμοποιήσει μονάδες 'vw' και 'vh' στο css ενώ στον άλλον τις αντικατέστησα με '%'.
 
 
-Μπορείτε να δείτε την σελίδα να τρέχει στους συνδέσμους
+<a href="./weather exercise">site without VW and VH on css</a>
+<a href="./weather exercise with vw_vh">site using VW and VH on css</a>
 
-http://proj.oresp.eu/weather_exercise/index.html#
-
-και
-
-http://proj.oresp.eu/weather_exercise_with_vw_vh/index.html#
